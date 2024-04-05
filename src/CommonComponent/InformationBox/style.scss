@@ -1,0 +1,65 @@
+@import '../../Styles/variables';
+
+.information-box-container {
+  .default-position {
+    right: -12px;
+    top: 38px;
+    &::after {
+      content: '';
+      border-left: 7px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px solid transparent;
+      border-bottom: 7px solid $white;
+      position: absolute;
+      right: 14px;
+      top: -15px;
+    }
+  }
+  .top-align-info {
+    right: -12px;
+    bottom: 38px;
+    &::after {
+      content: '';
+      border-left: 7px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px solid $white;
+      border-bottom: 7px solid transparent;
+      position: absolute;
+      right: 14px;
+      bottom: -15px;
+    }
+  }
+  .left-align-info {
+    left: 10px;
+    top: 38px;
+    &::after {
+      content: '';
+      border-left: 7px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px solid transparent;
+      border-bottom: 7px solid $white;
+      position: absolute;
+      top: -15px;
+      left: 8px;
+    }
+  }
+  .information-box-icon {
+    width: 23px;
+    height: 23px;
+
+  }
+  .information-box-body {
+    padding: 20px 23px;
+    background-color: $white;
+    position: absolute;
+    z-index: 1;
+    border-radius: 4px;
+    color: $black;
+    width: 250px;
+    @media screen and (min-width: 991px) {
+    }
+    // width: 150px;
+
+    // overflow-y: scroll;
+  }
+}

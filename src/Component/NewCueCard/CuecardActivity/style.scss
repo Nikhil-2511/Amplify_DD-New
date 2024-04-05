@@ -1,0 +1,28 @@
+@import '../../../Styles/variables';
+
+.cuecard-activity-container {
+    display: flex;
+    padding: 10px 25px;
+    // background: linear-gradient();
+    align-items: center;
+    column-gap: 24px;
+    border-radius: 8px;
+    background: linear-gradient(95deg, #D6C9C2 0%, #A8AEEC 118.16%);
+    margin-bottom: 16px;
+    font-size: 15px;
+
+    .activity-icon-container {
+        border: 5px solid $white;
+        border-radius: 50%;
+        background-color: #FEF0C7;
+        min-width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: auto;
+        }
+    }
+}

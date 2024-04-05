@@ -1,0 +1,43 @@
+export const loadState = () => {
+  try {
+    const serializedState = localStorage.getItem("state");
+    if (serializedState === null) {
+      return undefined;
+    }
+    return JSON.parse(serializedState);
+  } catch (err) {
+    return undefined;
+  }
+};
+
+export const saveState = (state) => {
+  try {
+    const serializedState = JSON.stringify(state);
+    localStorage.setItem('state', serializedState);
+  } catch {
+    // ignore write errors
+  }
+};
+
+
+export const saveSessionState = (state) => {
+  try {
+    const serializedState = JSON.stringify(state);
+    sessionStorage.setItem('sessionState', serializedState);
+  }
+  catch {
+
+  }
+}
+
+export const loadSessionState = () => {
+  try {
+    const serializedState = sessionStorage.getItem("sessionState");
+    if (serializedState === null) {
+      return undefined;
+    }
+    return JSON.parse(serializedState);
+  } catch (err) {
+    return undefined;
+  }
+}

@@ -1,0 +1,11 @@
+.page-404-container {
+    height: 100vh;
+    .page-404-image-wrapper {
+        background-image: url('../../assets/images/new404Image.png');
+        
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: right;
+        background-size: 390px;
+    }
+}

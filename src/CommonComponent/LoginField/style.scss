@@ -1,0 +1,43 @@
+@import '../../Styles/variables';
+
+.login-field-container {
+  padding: 0 37px;
+  border-radius: 8px;
+  display: flex;
+  &.error-field {
+    border: 1px solid $dangerColor;
+  }
+
+  .login-field-icon-container {
+    padding-right: 37px;
+    border-right: 1px solid $grey7;
+    // padding-top: 31px;
+    // padding-bottom: 31px;
+    display: flex;
+    align-items: center;
+    img {
+      width: 35px;
+      height: 28px;
+    }
+  }
+  .login-field-input-container {
+
+  }
+
+  .login-field-input {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: $primary;
+    font-size: $fontNormal;
+    font-weight: 600;
+    width: 100%;
+
+    &::placeholder {
+      color: $grey3;
+    }
+  }
+
+}

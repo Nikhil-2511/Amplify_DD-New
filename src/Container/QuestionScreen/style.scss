@@ -1,0 +1,50 @@
+@import '../../Styles/variables';
+@import '../../Styles/mixins';
+
+.question-screen-wrapper {
+  position: relative;
+}
+.question-screen-content {
+  display: flex;
+  min-height: 708px;
+  .left-container {
+    padding-top: 60px;
+    padding-bottom: 130px;
+    max-width: 806px;
+    position: relative;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      width: 65%;
+    }
+  }
+  .graident-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  .gradient-content {
+    max-width: 265px;
+    box-sizing: border-box;
+    font-size: $fontExtraLarge;
+  }
+  .custom-padding {
+    padding: 20px 42px;
+  }
+  .action-button-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

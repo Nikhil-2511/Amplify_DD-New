@@ -1,0 +1,16 @@
+.icon-box {
+  width: 46px;
+  height: 46px;
+  @media screen and (max-width: 768px) {
+    width: 35px;
+    height: 35px;
+    svg {
+      width: 15px;
+    }
+  }
+  background-color: #3247FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}

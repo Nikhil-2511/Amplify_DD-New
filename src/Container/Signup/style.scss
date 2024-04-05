@@ -1,0 +1,32 @@
+@import '../../Styles/variables';
+.title-text {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.auth-right-screen {
+  @media screen and (min-width: 601px) {
+    max-width: 45%;
+  }
+}
+
+.form-divider {
+  height: 1px;
+  position: relative;
+  background-color: $white;
+  border-radius: 4px;
+
+  .form-divider-content {
+    position: absolute;
+    left: 50%;
+    padding: 0 10px;
+    background-color: $black;
+    text-align: center;
+    transform: translateX(-50%);
+    border-radius: 12px;
+    top: -12px;
+    width: 100%;
+    max-width: 60px;
+
+  }
+}

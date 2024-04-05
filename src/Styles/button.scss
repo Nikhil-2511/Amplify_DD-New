@@ -1,0 +1,52 @@
+@import '../Styles/variables';
+
+.button {
+  height: 48px;
+  border-radius: 8px;
+  &.primary {
+    background-image: linear-gradient(304.87deg, $gradientColor3 -13.02%, $gradientColor1 105.98%);
+    color: $black;
+    // min-width: 100px;
+  }
+  &.outline {
+    // border-image: linear-gradient(130deg, #3247FF 10%, #FFBC9E 80%);
+    border: 0.5px solid $grey1;
+    color: $white;
+    // min-width: 100px;
+    &:hover {
+      border: 0.5px solid $grey1;
+    }
+  }
+  &.disabled {
+    background: $grey9;
+    pointer-events: none;
+  }
+  &.accent {
+    background: $gradientColor2;
+    color: $grey5;
+    font-weight: 500;
+    // padding: 12px 20px;
+    &:hover {
+      background: $gradientColor2;
+      color: $grey5;
+      font-weight: 500;
+    }
+  }
+  &.radial-grad {
+    color: $black;
+    background: linear-gradient(330.87deg, #FFBC9E 0%, #D0D6FF 35.15%, #FFFEFE 100%);
+  }
+  &.error {
+    background: $dangerColor;
+    color: $white;
+    &:hover {
+      background: $dangerColor;
+    }
+  }
+  &.disabled-button {
+    background: $grey5;
+    pointer-events: none;
+    color: $white;
+    box-shadow: none;
+  }
+}

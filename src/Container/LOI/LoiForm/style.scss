@@ -1,0 +1,21 @@
+@import '../../../Styles/variables';
+
+.edit-loi-container {
+    padding: 48px;
+
+    .loi-section-divider {
+        margin: 36px 0;
+        height: 1px;
+        background-color: $grey3 ;
+    }
+}
+.form-field-number {
+    display: inline-block;
+    background-color: $gradientColor1;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    margin-right: 10px
+}

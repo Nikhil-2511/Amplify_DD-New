@@ -1,0 +1,18 @@
+.profile-page-container {
+    display: flex;
+    @media screen and (max-width: 1200px) {
+        flex-direction: column-reverse;
+        row-gap: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+        column-gap: 50px;
+    }
+    .profile-page-form-section {
+        max-width: 955px;
+    }
+    .other-information-section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+}

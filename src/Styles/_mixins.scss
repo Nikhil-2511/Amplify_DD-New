@@ -1,0 +1,26 @@
+@mixin primaryTheme($backgroundColor: $primary, $textColor: $accent, $fontSize: $fontRegular) {
+  background-color: $backgroundColor;
+  color: $textColor;
+  font-size: $fontSize;
+}
+@mixin linearGradient($gradientVal) {
+  background-image: linear-gradient($gradientVal);
+}
+@mixin boxShadow($val) {
+  box-shadow: $val;
+}
+@mixin radialGradient($gradientVal) {
+  background-image: radial-gradient($gradientVal);
+}
+
+@mixin squareBox($val) {
+    width: $val;
+    height: $val;
+    border-radius: 50%;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

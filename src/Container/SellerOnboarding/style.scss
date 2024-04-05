@@ -1,0 +1,29 @@
+@import '../../Styles/variables';
+
+.seller-onboarding-background-container {
+    width: 100%; /* Set the width as needed */
+    height: 100vh; /* Set the height as needed */
+    background-image: url($appAssetUrl + "sellerOnboardingBg.jpg"); /* URL to your SVG image */
+    background-size: cover; /* Cover the entire container */
+    background-repeat: no-repeat; /* Prevent repeating the background */
+    /* Add additional CSS properties as needed */
+}
+
+.seller-onboarding-background-gradient {
+    position: relative; /* Ensure positioning context for absolute positioning */
+    // width: 100%; /* Set the width of the container */
+    // height: 300px; /* Set the height of the container */
+    background-image: url('../../assets/images/Lightgradient2.png'); /* Set the background image */
+    background-size: 80% 190%; /* Cover the entire background area */
+    background-position: -100% 200%;; /* Center the background image */
+    background-repeat: repeat;
+}
+
+.seller-analytics-background-container {
+    width: 100%; /* Set the width as needed */
+    height: 100vh; /* Set the height as needed */
+    background-image: url('../../assets/images/analyticsBG.svg'); /* URL to your SVG image */
+    background-size: cover; /* Cover the entire container */
+    background-repeat: no-repeat; /* Prevent repeating the background */
+    /* Add additional CSS properties as needed */
+}

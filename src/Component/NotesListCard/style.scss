@@ -1,0 +1,8 @@
+.notes-list-container {
+    .notes-content-wrapper {
+        width: 100%;
+        @media screen and (min-width: 1200px) {
+            width: calc(50% - 24px);
+        }
+    }
+}

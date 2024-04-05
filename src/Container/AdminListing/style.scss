@@ -1,0 +1,21 @@
+@import '../../Styles/variables';
+
+.admin-listing-container {
+  // min-height: ;
+  position: relative;
+  padding: 30px 20px;
+  border-top: 1px solid $grey3;
+  .admin-filter-section {
+    width: 296px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: $primary;
+  }
+  .admin-content-section {
+    width: calc(100% - 296px);
+    margin-left: auto;
+    padding-left: 40px;
+  }
+}

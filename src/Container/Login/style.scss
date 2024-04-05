@@ -1,0 +1,13 @@
+// .login-container {
+  .title-text {
+    font-size: 50px;
+    font-weight: 600;
+  }
+// }
+.login-info-container {
+  max-width: 355px;
+  display: inline-block;
+  @media screen and (min-width: 1024px) {
+    padding-right: 20px;
+  }
+}

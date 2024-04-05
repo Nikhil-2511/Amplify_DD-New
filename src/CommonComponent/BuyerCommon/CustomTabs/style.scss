@@ -1,0 +1,51 @@
+@import '../../../Styles/variables';
+
+.tab-container {
+    display: flex;
+    align-items: center;
+    color: #475467;
+    column-gap: 10px;
+    .tab-item {
+        padding: 5px 15px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 10px;
+        margin: 0 1px;
+        // @media screen and (max-width: 768px) {
+        //     flex: 1;
+        //     align-content: center;
+        //     justify-content: center;
+        // }
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+        }
+        &:first-child {
+            margin-left: 0;
+            // padding-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+            // padding-right: 0;
+        }
+        img {
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+        }
+        .custom-icon-size{
+            width: 30px;
+            height: 30px;
+        }
+        &.active-tab {
+            color: $blueColor;
+            border-bottom: 1px solid $blueColor;
+            transition: all;
+        }
+        &.tab-divider {
+            // border-right: 1px solid #EAECF0;
+            // margin-right: 5px
+        }
+    }
+}

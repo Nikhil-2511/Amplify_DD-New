@@ -1,0 +1,296 @@
+@import '../../Styles/variables';
+.dashboard-container {
+  padding: 30px 0 0;
+  position: relative;
+  min-height: calc(100vh - 86px - 317px);
+}
+
+.user-profile-container {
+  flex-wrap: wrap;
+  row-gap: 20px;
+  @media screen and (min-width: 767px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.user-profile-status {
+  border-radius: 13px;
+  width: 100%;
+  overflow: hidden;
+  @media screen and (min-width: 767px) {
+    width: 60%;
+  }
+}
+
+.capitalize-non{
+  text-transform: none !important;
+}
+.dashboard-progress-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  // right: 0;
+  background-image: linear-gradient(130deg, $gradientColor1 10%, $gradientColor3 80%);
+  height: 4px;
+  border-radius: 13px;
+
+  .dashboard-mask-layer {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 5px;
+    background-color: $primary;
+    border-radius: -13px;
+  }
+}
+.user-conversation-container {
+  width: 100%;
+  @media screen and (min-width: 767px) {
+    width: 40%;
+  }
+}
+
+.user-switch-container {
+  padding: 5px;
+  margin-bottom: 10px;
+  align-items: center;
+  .user-switch-content {
+    // margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid $grey3;
+    justify-content: space-between;
+    padding-left: 10px;
+    width: 85%;
+    padding: 12px 20px;
+    background-color: $black1;
+  }
+}
+.user-profile-cta{
+  width: 85%;
+}
+.user-details-section {
+  margin: 20px 0;
+  display: flex;
+  @media screen and (max-width: 991px) {
+    flex-direction: column-reverse;
+  }
+  .user-detail-section-1 {
+    width: 67%;
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
+  }
+  .user-detail-section-2 {
+    width: 33%;
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
+  }
+}
+
+.user-col-container {
+  margin-top: 10px;
+  column-gap: 20px;
+}
+.user-details-content {
+  padding: 10px 20px;
+  @media screen and (min-width: 768px) {
+    padding: 24px 32px;
+    // margin-right: 30px;
+  }
+}
+
+.border-white {
+  border: 1px solid $white;
+}
+.border-radius5 {
+  border-radius: 5px;
+}
+
+.engagement-icon{
+  height: 15px;
+  width: 15px;
+  margin-right: 2px;
+}
+.underline-enagement{
+  text-decoration: underline;
+  cursor: pointer;
+  color: #FFBC9E;
+  font-size: 13px;
+  line-height: 17.59px;
+  font-weight: 500;
+}
+.dashboard-edit-action-cta {
+  position: sticky;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $grey3;
+  z-index: 10;
+}
+.valuation-info-box {
+  position: absolute;
+  right: -10px;
+  top: 40px;
+  background-color: $grey3;
+  color: $white;
+  border-radius: 16px;
+  padding: 16px;
+  width: 300px;
+  z-index: 1;
+  .valuation-info-box-image {
+    width: 28px;
+    img {
+      width: 28px;
+    }
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    // width: 30px;
+    // height: 20px;
+    border-left: 15px solid $grey3;
+    border-right: 15px solid transparent;
+    border-top: 15px solid $grey3;
+    border-bottom: 15px solid transparent;
+    border-radius: 2px;
+    // background-color: red;
+    right: 10px;
+    top: -8px;
+    transform: rotate(45deg);
+  }
+}
+
+.seller-approval-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  text-align: center;
+
+  &.success {
+      background-color: $gradientColor1;
+      line-height: 59px;
+  }
+
+  &.error {
+      background-color: $dangerColor;
+      line-height: 55px;
+  }
+
+  .warning-icon {
+      color: white;
+  }
+}
+
+// Re-Sign Your Engagement Letter Styling
+
+.resignEl-modal-container{
+    background: #353535;
+    margin: auto;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 10px;
+    max-width: 500px;
+    row-gap: 32px;
+}
+.text-resignEl-cnt{
+  color: black;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.title-resignEl{
+  // font-family: SF Compact Rounded;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+.para-resignEl{
+  font-size: 16px;
+  font-weight: 300;
+  // font-family: SF Compact Rounded;
+  color: white;
+  margin: 0;
+}
+.button-cnt{
+  
+}
+.featuredIconResignEl{
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+.re-signTitle{
+  align-items: center;
+}
+.orange-btn{
+  background-color: #FF8970!important;
+  margin-left: 10px;
+}
+
+/* styles.css */
+
+.form-field-title {
+  font-size: 22px;
+  font-weight: 500;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile-none{
+    display: none;
+  }
+  .custom-margin-mobile{
+    margin-bottom: 20px;
+  }
+}
+
+.copyIconWhite{
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 0;
+  right: 5%;
+  cursor: pointer;
+}
+
+.four-col-view {
+  display: flex;
+  row-gap: 16px;
+  // column-gap: 10px;
+  flex-wrap: wrap;
+  @media screen and (min-width: 1024px) {
+    flex-direction: row !important;
+  }
+  .four-col-list-item {
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      width: 50%;
+    }
+    @media screen and (min-width: 1024px) {
+      width: 25%;
+    }
+  }
+}
+
+.render-object-view {
+  flex-wrap: wrap;
+  .render-object-view-item {
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      width: 50%;
+    }
+    @media screen and (min-width: 1024px) {
+      width: 33%;
+    }
+  }
+}

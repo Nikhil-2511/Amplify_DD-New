@@ -1,0 +1,13 @@
+.navbar-wrapper {
+  height: 86px;
+  > * {
+    height: 100%;
+  }
+  .navbar-links-container {
+    position: relative;
+  }
+  .navbar-links {
+    padding: 10px;
+    cursor: pointer;
+  }
+}

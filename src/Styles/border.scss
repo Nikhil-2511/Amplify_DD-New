@@ -1,0 +1,93 @@
+@import '../Styles/variables';
+
+.border {
+  border: 1px solid;
+  &.border-F2F4F7 {
+    border-color: $grey15;
+  }
+  &.border-282828 {
+    border-color: $grey5;
+  }
+  &.border-D0D5DD {
+    border-color: $grey17;
+  }
+  &.border-353535 {
+    border-color: $grey3;
+  }
+  &.border-EAECF0 {
+    border-color: #EAECF0;
+  }
+  &.border-B5B5B5 {
+    border-color: #B5B5B5;
+  }
+  &.border-667085 {
+    border-color: #667085;
+  }
+}
+
+.border-type1 {
+  border: 1px solid $grey1;
+}
+
+.border-type2 {
+  border: 1px solid $grey3;
+}
+
+.border-error {
+  border-color: $errorColor;
+}
+.border-b {
+  border-bottom: 1px solid;
+  
+  &.border-F2F4F7 {
+    border-color: $grey15;
+  }
+  &.border-282828 {
+    border-color: $grey5;
+  }
+  &.border-D0D5DD {
+    border-color: $grey17;
+  }
+  &.border-353535 {
+    border-color: $grey3;
+  }
+}
+
+
+// Border Radius
+
+.rounded-full {
+  border-radius: 50%;
+}
+
+.rounded-4 {
+  border-radius: 4px;
+}
+
+.rounded-6 {
+  border-radius: 6px;
+}
+
+.rounded-8 {
+  border-radius: 8px;
+}
+
+.rounded-10 {
+  border-radius: 10px;
+}
+
+.rounded-12 {
+  border-radius: 12px;
+}
+
+.rounded-13 {
+  border-radius: 13px;
+}
+
+.rounded-14 {
+  border-radius: 14px;
+}
+
+.rounded-16 {
+  border-radius: 16px;
+}

@@ -1,0 +1,19 @@
+@import '../../Styles/variables';
+
+.btn-cnt {
+    &.boolean-button {
+        background-color: $primary;
+        font-size: $fontLarge;
+        color: $white;
+        min-width: 100px;
+        border: 1px solid $grey3;
+        margin-right: 30px;
+        &:hover {
+          background-color: $grey5;
+        }
+        &.selected {
+          background-color: $gradientColor1;
+          border: 1px solid $gradientColor1;
+        }
+    }
+  }

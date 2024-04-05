@@ -1,0 +1,25 @@
+@import '../../Styles/variables';
+
+.not-found-container {
+  padding: 40px;
+  .not-found-container-image-bg {
+    background-image: url($appAssetUrl + 'radialGradient.png');
+    height: 60vh;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .error-code {
+    background-color: $dangerColor;
+    color: #fff;
+    padding: 5px 16px;
+    border: 1.5px solid #FFBC9E;
+    border-radius: 100px;
+    font-size: 22px;
+    margin: 0;
+  }
+  .not-found-cta {
+    font-weight: 600;
+    padding: 13px 24px;
+  }
+}

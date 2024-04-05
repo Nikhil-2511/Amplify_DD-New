@@ -1,0 +1,62 @@
+$primary: #121212;
+$secondary: #f5f5f5;
+$accent: #fff;
+$dangerColor: #FF8970;
+$errorColor: #B42318;
+$warningColor: #DC6803;
+$warningColor1: #FEF0C7;
+
+
+$black: #000000;
+$black1: #070707;
+$white: #fff;
+$gradientColor1: #3247FF;
+$gradientColor2: #D0D6FF;
+$gradientColor3: #FFBC9E;
+$gradientColor4: #FFFEFE;
+$grey1: #D6D6D6;
+$grey2: #CFCFCF;
+$grey3: #353535;
+$grey4: hsl(0, 0%, 42%);
+$grey5 : #282828;
+$grey6: #A9A9A9;
+$grey7: #8C8C8C;
+$grey8: #696969;
+$grey9: #B5B5B5;
+$grey10: #B8B8B8;
+$grey11: #667085;
+$grey12: #1D2939;
+$grey13: #1E1E1E;
+$grey14: #1A1A1A;
+$grey15: #F2F4F7;
+$grey16: #98A2B3;
+$grey17: #D0D5DD;
+$redColor: #FF464D;
+$successColor: #2e7d32;
+$blueColor: #2E90FA;
+$greyBlue: #363F72;
+$greenColor: #027A48;
+$grayBlueColor: #3E4784;
+$voiletColor: #7F56D9; 
+$redColor1: #D92D20;
+$redColor2: #FEF3F2;
+
+
+
+$fontExtraLarge: 24px;
+$fontLarge: 20px;
+$fontMedium: 18px;
+$fontNormal: 16px;
+$fontRegular: 14px;
+$fontSmall: 12px;
+$fontXtraSmall: 10px;
+$fontMicro: 8px;
+
+
+@font-face {
+  font-family: 'SF';
+  src: url('../fonts/SF_Compact_Rounded/SF-Compact-Rounded-Regular.otf');
+}
+
+$fontFamily: 'SF', sans-serif;
+$appAssetUrl: 'https://dd-app-assets.s3.ap-south-1.amazonaws.com/img/'

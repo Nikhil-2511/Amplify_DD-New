@@ -1,0 +1,44 @@
+.buyer-listing-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 24px;
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+}
+.custom-side-panel{
+    margin: 50px -59px;
+    transform: rotate(-90deg);
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    padding: 0px 9px;
+    z-index: 1;
+}
+.side-panel{
+    background: black;
+    align-items: center;
+    padding: 5px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.custom-all-filter{
+    position: fixed;
+    right: 0;
+    bottom: 20%;
+    padding: 10px;
+    z-index: 1;
+}
+.all-filter{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #404258;
+    color: white;
+    font-size: 18px;
+    align-items: center;
+    font-weight: 500;
+}

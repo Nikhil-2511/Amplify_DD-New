@@ -1,0 +1,8 @@
+.custom-scrollbar::-webkit-scrollbar {
+    width: 5px; /* Adjust the width as needed */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Radius of the scrollbar thumb */
+  }

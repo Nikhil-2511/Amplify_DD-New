@@ -1,0 +1,12 @@
+.mobile-navigation-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    // height: 54px;
+    background-color: #121212;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}

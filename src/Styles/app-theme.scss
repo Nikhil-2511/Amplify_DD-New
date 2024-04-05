@@ -1,0 +1,133 @@
+@import '../Styles/variables';
+
+.primary-theme {
+  background-color: $primary;
+  color: $secondary;
+}
+.secondary-theme {
+  background-color: $secondary;
+  color: $accent;
+}
+
+.grad-1 {
+  background-image: linear-gradient(130deg, $gradientColor1 10%, $gradientColor3 80%);
+}
+.grad-2 {
+  background: linear-gradient(155.72deg, #FFFEFE -51.37%, #D0D6FF 62.74%, #FFBC9E 139.33%, #3247FF 237.1%);
+}
+.grad-3 {
+  background: linear-gradient(96.55deg, rgba(255, 255, 255, 0.5) 0.11%, rgba(255, 255, 255, 0.15) 100%, rgba(255, 255, 255, 0.1) 100%);
+}
+.grad-4 {
+  background: linear-gradient(116.4deg, #161616 0%, rgba(22, 22, 22, 0.6) 99.52%);
+}
+.grad-5 {
+  background: radial-gradient(762.61% 406.98% at 8.37% 13.54%, #FFFEFE 0%, #D0D6FF 34.97%, #FFBC9E 58.15%, #3247FF 100%);
+}
+
+.logo-container {
+  max-width: 150px;
+  img {
+    width: 100%;
+  }
+}
+
+.grad-text {
+  background: -webkit-linear-gradient(-86deg, $gradientColor1 26.73%,  $gradientColor3 62.86% );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.grad-text1 {
+  background: -webkit-linear-gradient(-77deg, $gradientColor1 23.73%,  $gradientColor3 68.86% );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.global-modal-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  outline: none;
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.custom-width{
+  width: 80%;
+}
+.custom-width-60{
+  width: 50%;
+}
+.social-btn-container { 
+  // max-width: 463px;
+}
+
+.auth-action-cta-container {
+  .auth-action-cta {
+    color: $grey3;
+    font-size: $fontMedium;
+    font-weight: 600;
+    box-shadow: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    &.disabled {
+      pointer-events: none;
+      color: $grey6;
+    }
+    &:hover {
+      box-shadow: none;
+    }
+  }
+  .social-image {
+    max-width: 23px;
+    margin-right: 10px;
+  }
+  .auth-action-link {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+    height: 48px;
+
+    &:focus {
+      color: inherit;
+    }
+    &:active {
+      color: inherit
+    }
+    &:visited {
+      color: inherit;
+    }
+    &.inactive-link {
+      background-color: #BBB;
+      color: #667085;
+      pointer-events: none;
+    }
+    &.active-link {
+      background-color: #0A66C2;
+      color: $white;
+    }
+  }
+}
+
+.gradient-image-background {
+  background-image: url('../assets/images/gradientBlurBg.png');
+}
+.gradient-mask-top-right {
+  position: fixed;
+  top: 20%;
+  right: 10%;
+}

@@ -1,0 +1,51 @@
+@import '../Styles/variables';
+
+.congratulation-modal-container {
+    border-radius: 50px;
+    // background: linear-gradient(135deg, #FFFEFE, #D0D6FF, #FFBC9E, #3247FF);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    background: rgba(7, 7, 7, 0.44);
+    .congratulation-modal-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;        
+        padding: 23px;
+
+        .congratulation-mask {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 92px;
+            background: radial-gradient(980.66% 174.14% at 149.40% 129.44%, rgba(255, 254, 254, 0.20) 0%, rgba(208, 214, 255, 0.20) 34.97%, rgba(255, 188, 158, 0.20) 58.15%, rgba(50, 71, 255, 0.20) 100%);
+            filter: blur(100px);
+        }
+    }
+    .congratulations-icon {
+        width: 100px;
+        height: 100px;
+    }
+    .congratulation-title {
+        color: $white;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 121.836%;
+    }
+    .desc-text {
+        color: $white;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 121.836%;
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .congratulation-action-container {
+        min-width: 100px;
+    }
+}

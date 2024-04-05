@@ -1,0 +1,39 @@
+.main-tabs-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .main-tabs-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .main-tabs-wrapper {
+    display: flex;
+    // overflow-x: auto;
+  }
+  
+  .tab {
+    padding: 8px 16px;
+    white-space: nowrap;
+  }
+  
+  .arrow {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+//   .arrow:hover {
+//     background-color: #f0f0f0;
+//   }
+  
+  .left {
+    order: -1;
+    margin-right: 8px; /* Adjust as needed */
+  }
+  
+  .right {
+    margin-left: 8px; /* Adjust as needed */
+  }
+  

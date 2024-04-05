@@ -1,0 +1,18 @@
+.download-template-container {
+    border: 1px solid #B5B5B5;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    column-gap: 5px;
+    @media screen and (min-width: 768px) {
+        column-gap: 10px;
+    }
+}
+
+.download-icon-class {
+    width: 15px; 
+
+    @media screen and (min-width: 768px) {
+        width: 20px;
+    }
+}
